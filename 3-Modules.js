@@ -1,10 +1,8 @@
 // Modules
-const sam = 'sam';
-const man = 'man';
-const Sayhi = (name) => {
-    console.log(`hello ${name}`);
-};
+
+const names = require('./4-names')
+const Sayhi = require('./5-utils')
 
 Sayhi('Sammy');
-Sayhi(sam);
-Sayhi(man);
+Sayhi(names.sam);
+Sayhi(names.man);
